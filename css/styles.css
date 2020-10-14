@@ -375,7 +375,7 @@ h4 {
 
 @media (min-width: 768px) {
   .grid-container {
-    grid-template-columns: 55px 1fr;
+    grid-template-columns: 70px 1fr;
     grid-template-areas:
     "header header"
     "navigation main";
@@ -383,9 +383,10 @@ h4 {
   
   .main {
     grid-template-columns: 50%;
+    margin: 0 auto;
   }
 
-  .traffic, .social {
+  .traffic, .social, .main-header, .alert {
     grid-column: 1 / span 2;
   }
 
@@ -398,22 +399,158 @@ h4 {
   }
   
   .widget-container-full {
-    width: 90vw;
+    width: 85vw;
   }
   
   .widget-container-half {
-      width: 45vw;
+      width: 40vw;
   }
+
+  /* main header */
+
+  .dash-search {
+    width: 70%;
+  }
+
+  .dash-headline {
+    width: 30%;
+  }
+
+
+  /* alert banner */
+
+  .alert {
+    width: 100%;
+  }
+
+  /* navigation */
 
   .navigation {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 10px;
   }
 
   .icons {
     width: 45px;
     height: 45px;
-
+    padding: 3px 3px 3px 3px;
+    margin: 15px auto;
   }
+
+  /* social stats */
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-container {
+    margin: 0 5px;
+    height: 100px;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .svg {
+    width: 65px;
+    height: 65px;
+  }
+
+  .social-text {
+    margin: 0;
+  }
+
+  .social-head {
+    font-size: 17px;
+    margin: 10px 10px 0 0;
+    text-align: left;
+  }
+
+  .social-number {
+    font-size: 25px;
+    margin: 10px 20px 0 0;
+  }
+
+  /* members and recent activity */
+
+  h4 {
+    text-align: center;
+  }
+
+  .members h4 {
+    border-right: 1px solid lightgray;
+  }
+
+  .members,
+  .recent-activity {
+    margin-top: 12px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .members-profile {
+    height: 90px;
+    margin: 0;
+    border-right: 1px solid lightgray;
+  }
+
+  .victoria {
+    border-top: 1px solid lightgray;
+  }
+
+  .activity-member {
+    height: 90px;
+    padding: 13px 0 8px;
+    margin: 0;
+    border-right: 1px solid lightgray;
+  }
+
+  .activity-text {
+    width: 60%;
+  }
+
+  /* message and settings widget */
+
+  .form-field,
+  .form-area {
+    width: 90%;
+  }
+
+  .button-primary {
+    width: 90%;
+    font-size: 25px;
+  }
+
+  .message-widget {
+    border-right: 1px solid lightgray;
+  }
+
+  .switch {
+    margin-right: 20px;
+  }
+
+  .timezone-buttons {
+    display: inline-block;
+    width: 60%;
+  }
+
+  .settings-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .button-disabled {
+    width: 80%;
+    height: 40px;
+    margin: auto 8px;
+    padding: 8px;
+  }
+
 }
