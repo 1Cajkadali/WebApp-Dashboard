@@ -9,7 +9,7 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
-    <div class="grid-container">
+    <div class="grid-container clearfix">
       <header class="header">
         <h1>MyApp</h1>
           <div class="header-notifi">
@@ -218,47 +218,44 @@
         <!-- local settings widget -->
         <section class="settings">
           <h3>Settings</h3>
-          <div class="switch">
-          <label class="switch-light switch-material switch-email" onclick="">
-            <input type="checkbox">
-          
-            <strong>
-              Send Email Notifications
-            </strong>
-          
-            <span>
-              <span>Off</span>
-              <span>On</span>
-              <a></a>
-            </span>
-          </label>
-          </div>
 
-          <div class="switch">
-          <label class="switch-light switch-material switch-profile" onclick="">
-            <input type="checkbox">
-          
-            <strong>
-              Set Profile to Public
-            </strong>
-          
-            <span>
-              <span>Off</span>
-              <span>On</span>
-              <a></a>
-            </span>
-          </label>
-          </div>
-          
-          <select class="form-field" id="timezone">
-            <option disabled selected>Select a Timezone</option>
-            <option>Eastern</option>
-            <!-- more options -->
-          </select>
-          <div class="settings-button" >
-            <button class="button-primary" id="save">Save</button>
-            <button class="button-disabled" id="cancel">Cancel</button>
-          </div>
+              <div class="switch">
+                <p>Send Email Notifications</p>
+                  <label class="switch-light switch-material switch-email" onclick="">
+                    <input type="checkbox">
+                    <span>
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                  </label>
+              </div>
+
+              <div class="switch">
+                <p>Set Profile to Public</p>
+                
+                  <label class="switch-light switch-material switch-profile" onclick="">
+                    <input type="checkbox">
+                    <span>
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                  </label>
+              </div>
+              <div class="timezone-buttons">
+                <select class="form-field" id="timezone">
+                  <option disabled selected>Select a Timezone</option>
+                  <option>Eastern</option>
+                  <option>Western</option>
+                  <option>GMT+1</option>
+                  <option>GMT+2</option>
+                </select>
+                <div class="settings-button" >
+                  <button class="button-primary" id="save">Save</button>
+                  <button class="button-disabled" id="cancel">Cancel</button>
+                </div>
+              </div>
         </section>
   
 

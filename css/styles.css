@@ -3,7 +3,7 @@
 * {
   font-family: 'Calibri', sans-serif;
   box-sizing: border-box;
-
+  overflow: visible;
 }
 
 /* 320px min */
@@ -59,6 +59,10 @@
   padding-right: 10px;
 }
 
+#notification {
+  width: 25px;
+  height: 25px;
+}
 /* Nav bar styles */
 
 .navigation {
@@ -187,13 +191,13 @@ h4 {
   box-sizing: content-box;
   overflow: visible;
   background-color: #7377bf;
-  height: 45px;
+  height: 40px;
   padding: 10px;
   border-radius: 50%;
   float: left;
   display: flex;
   justify-content: center;
-  width: 45px;
+  width: 40px;
   margin: 7px 2px 5px 5px;
 } 
 
@@ -331,9 +335,41 @@ h4 {
 }
 
 /* settings widget */
+.switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
 
+.switch span {
+  margin: 10px 0;
+}
 
+.settings-button {
+  width: 50%;
+}
 
+.form-field {
+  width: 40%;
+}
+
+.timezone-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-disabled {
+  padding: 5px;
+  margin: 5px;
+  background-color: slategray;
+  border: 2px solid darkslategray;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
 
 
 
@@ -367,5 +403,17 @@ h4 {
   
   .widget-container-half {
       width: 45vw;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .icons {
+    width: 45px;
+    height: 45px;
+
   }
 }
