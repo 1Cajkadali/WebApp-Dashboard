@@ -59,9 +59,17 @@
   padding-right: 10px;
 }
 
+.notifi-green-icon {
+}
+
 #notification {
   width: 25px;
   height: 25px;
+  transition: transform 1s;
+}
+
+#notification:hover {
+  transform: scale(1.3);
 }
 /* Nav bar styles */
 
@@ -383,7 +391,7 @@ h4 {
   
   .main {
     grid-template-columns: 50%;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .traffic, .social, .main-header, .alert {
@@ -430,6 +438,7 @@ h4 {
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px;
+    margin-right: 0;
   }
 
   .icons {
@@ -552,5 +561,62 @@ h4 {
     margin: auto 8px;
     padding: 8px;
   }
+}
 
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 100px 1fr;
+    grid-template-areas:
+    "header header"
+    "navigation main";
+    }
+  
+  .header h3 {
+    text-transform: capitalize;
+  }
+  
+  /* navigation */
+
+  .icons {
+    width: 55px;
+    height: 55px;
+    padding: 3px;
+    margin: 15px auto 15px 10px;
+  }
+
+  /* message widget */
+
+  .form-field,
+  .form-area {
+    width: 95%;
+  }
+
+  .button-primary {
+    width: 95%;
+    font-size: 25px;
+    margin: 5px 0 0 10px;
+    height: 40px;
+  }
+
+  /* settings */
+
+  .timezone-buttons {
+    width: 100%;
+  }
+
+  .settings-button {
+    width: 98%;
+    margin: 0;
+  }
+
+  .button-save {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .button-disabled {
+    width: 100%;
+    height: 40px;
+  }
 }

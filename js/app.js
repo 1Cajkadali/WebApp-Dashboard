@@ -1,4 +1,5 @@
 const alertBanner = document.getElementById('alert');
+const bellIcon = document.getElementById('notifi-green-icon');
 const trafficCanvas = document.getElementById('traffic-chart');
 const dailyCanvas = document.getElementById('daily-chart');
 const mobileCanvas = document.getElementById('mobile-user-chart');
@@ -22,8 +23,10 @@ alertBanner.addEventListener('click', e => {
     const element = e.target;
         if (element.classList.contains("alert-banner-close")) {
         alertBanner.style.display = "none"
+        bellIcon.style.display ="none"
     }
 });
+
 
 // Traffic chart //
 
